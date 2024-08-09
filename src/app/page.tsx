@@ -8,8 +8,8 @@ import { Badge } from "./_components/ui/badge";
 import { Avatar, AvatarImage } from "@radix-ui/react-avatar";
 import { db } from "./_lib/prisma";
 import BarbershopItem from "./_components/barbershop-items";
-import { QuickSearchOptions } from "./_constants/search";
 import BookingItem from "./_components/booking-item";
+import { quickSearchOptions } from "./_constants/search";
 
 
 const Home =  async () => {
@@ -39,7 +39,7 @@ const Home =  async () => {
 
    {/**BUSCA RÁPIDA */}  
     <div className="mt-6 flex gap-3 overflow-x-scroll [&::-webkit-scrollbar]:hidden">
-     {QuickSearchOptions.map((option) => (
+     {quickSearchOptions.map((option) => (
       <Button className="gap-2" variant="secondary" key={option.title}>
         <Image 
           src={option.imageUrl}
