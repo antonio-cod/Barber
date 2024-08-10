@@ -1,14 +1,15 @@
 "use client"
 
-import { Button } from "./ui/button"
 import { CalendarIcon, HomeIcon, LogInIcon, LogOutIcon } from "lucide-react"
-import { SheetClose, SheetContent, SheetHeader, SheetTitle } from "./ui/sheet"
-import { quickSearchOptions } from "../_constants/search"
-import Link from "next/link"
-import Image from "next/image"
-import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog"
 import { signOut, useSession } from "next-auth/react"
+import Image from "next/image"
+import Link from "next/link"
+import { quickSearchOptions } from "../_constants/search"
+
 import { Avatar, AvatarImage } from "./ui/avatar"
+import { Button } from "./ui/button"
+import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog"
+import { SheetClose, SheetContent, SheetHeader, SheetTitle } from "./ui/sheet"
 import SignInDialog from "./sign-in-dialog"
 
 const SidebarSheet = () => {
