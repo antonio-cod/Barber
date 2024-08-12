@@ -3,13 +3,10 @@ import Header from "./_components/header";
 import { Input } from "./_components/ui/input";
 import { Button } from "./_components/ui/button";
 import Image from "next/image";
-import { Card, CardContent } from "./_components/ui/card";
-import { Badge } from "./_components/ui/badge";
-import { Avatar, AvatarImage } from "@radix-ui/react-avatar";
-import { db } from "./_lib/prisma";
 import BarbershopItem from "./_components/barbershop-items";
 import BookingItem from "./_components/booking-item";
 import { quickSearchOptions } from "./_constants/search";
+import { db } from "./_lib/prisma";
 
 
 const Home =  async () => {
