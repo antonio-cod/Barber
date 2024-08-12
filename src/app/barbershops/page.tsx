@@ -1,10 +1,7 @@
-
-import Header from "../header"
-
-import BarbershopItem from "../barbershop-items"
-import Search from "../search"
-import { db } from "@/app/_lib/prisma"
-
+import BarbershopItem from "../_components/barbershop-items"
+import Header from "../_components/header"
+import Search from "../_components/search"
+import { db } from "../_lib/prisma"
 
 interface BarbershopsPageProps {
   searchParams: {
@@ -12,7 +9,6 @@ interface BarbershopsPageProps {
     service?: string
   }
 }
-
 
 const BarbershopsPage = async ({ searchParams }: BarbershopsPageProps) => {
   const barbershops = await db.barbershop.findMany({
